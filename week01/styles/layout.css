@@ -54,7 +54,7 @@ aside {
 footer {
     background-color: var(--accent1-color);
     padding-top: 4px;
-    padding-bottom: 6rem;
+    padding-bottom: 7.5rem;
     display: flex;
     justify-content: center;
 }
