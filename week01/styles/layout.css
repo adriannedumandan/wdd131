@@ -13,9 +13,12 @@ body {
 
 header {
     background-color: var(--primary-color);
-    padding-bottom: 3rem;
     padding-top: 2px;
-    padding-left: 20px;
+}
+
+.header {
+    padding-left: 1rem;
+    padding-bottom: 3rem;
 }
 
 nav {
