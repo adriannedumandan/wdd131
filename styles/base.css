@@ -1,0 +1,167 @@
+:root {
+    --primary-color: #003366;
+    --secondary-color: #F5DEB3;
+    --accent1-color: #FFD470;
+    --accent2-color: #FF7F50;
+    --background-color: #FFFFF0;
+    --heading-font: 'Merriweather', serif;
+    --text-font: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+body {
+    font-family: var(--text-font);
+}
+
+h1 {
+    color: var(--primary-color);
+    display: grid;
+    align-items: center;
+	justify-content: center;
+    padding: 10px;
+    font-size: 28px;
+}
+
+h2 {
+    background-color: var(--accent2-color);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+	max-width: 100%;
+}
+
+
+nav a {
+	color:  var(--accent2-color);
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+    font-size: 20px;
+}
+
+nav a:hover {
+	text-decoration:overline;
+}
+
+figcaption {
+    font-style: italic;
+    color: #777;
+    font-size: 14px;
+}
+
+.links {
+    margin-top: 100px;
+    margin-left: 15px;
+}
+
+main {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 7px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    min-height: 100vh;
+}
+
+.card h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card img {
+    float: right;
+    margin: 25px;
+}
+
+.card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 35px;
+    margin-left: 15px;
+}
+
+aside {
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+aside h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+aside .flag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+aside .flag img {
+    margin-bottom: 5px;
+}
+
+.links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links li {
+    margin-bottom: 10px;
+}
+
+.links a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+footer, script {
+    margin-top: 10px;
+    height: 60px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 25px;
+}

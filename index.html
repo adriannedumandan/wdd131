@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 - Dynamic Web Fundamentals - Adrianne Dumandan</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Adrianne Dumandan">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+
+   <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Adrianne Dumandan</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/adrianne-dumandan/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27" target="_blank">Scripture</a>
+            <a href="www.">Final Project</a>
+        </nav>
+   </header>
+
+   <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="Adrianne Dumandan's photo" width="200">
+            <p>Mabuhay! My name is Adrianne Dumandan, and I am from the beautiful islands of the Philippines. I am currently working remotely as a Business Development Executive, where I thrive on exploring new opportunities and continuously learning. I find beauty in small, everyday moments.</p>
+
+            <aside>
+                <h3>Davao City, Philippines</h3>
+
+                <figure class="flag">
+                <img src="images/flag.jpg" alt="Philippine Flag" width="200">
+                <figcaption>Official Flag of the Philippines</figcaption>
+                </figure>
+
+                <p>The Philippines, an archipelago of more than 7,000 islands in Southeast Asia, is renowned for its stunning beaches, rich biodiversity, and warm hospitality.  From the famous Banaue Rice Terraces to the crystal-clear waters of Boracay and Palawan, its sceneries are diverse. The Philippines offers a vibrant mix of natural beauty, history, and cultural richness that captivates visitors and locals alike.</p>
+            </aside>
+        </section>
+
+        <section class="card">
+            <h2>Educational Resources</h2>
+            <ul class="links">
+                <li><a href="https://resourcecenter.byupathway.edu/" target="_blank">BYU Pathway Resource Center</a></li>
+                <li><a href="https://www.linkedin.com/learning/" target="_blank">LinkedIn Learning</a></li>
+                <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="https://www.coursera.org/" target="_blank">Coursera</a></li>
+            </ul>
+        </section>
+   </main>
+
+   <footer>
+    <p>
+        &copy;<span id="currentyear"></span> 🏝️ Adrianne Dumandan 🏝️ Philippines
+    </p>
+    <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    </script>
+
+</body>
+
+</html>
