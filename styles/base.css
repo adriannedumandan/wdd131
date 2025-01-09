@@ -17,12 +17,15 @@ body {
 }
 
 h1 {
-    color: var(--primary-color);
+    color: var(--background-color);
+    background-color: var(--primary-color);
     display: grid;
     align-items: center;
 	justify-content: center;
-    padding: 10px;
-    font-size: 28px;
+    padding: 20px;
+    font-size: 26px;
+    margin-bottom: 0%;
+    margin-top: 0%;
 }
 
 h2 {
@@ -30,6 +33,13 @@ h2 {
     display: flex;
     justify-content: center;
     padding: 10px;
+}
+
+h3 {
+    border-bottom: 0.9px solid #c0c0c0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
 }
 
 nav {
@@ -58,23 +68,18 @@ figcaption {
     font-size: 14px;
 }
 
-.links {
-    margin-top: 100px;
-    margin-left: 15px;
-}
-
 main {
-    /* display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 20px; */
-    display: grid;
-    grid-template-columns: 2fr 1fr;
     padding: 20px;
+    /* display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px; */
 }
 
-.card {
+.card, .card1 {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -86,7 +91,16 @@ main {
     min-height: 100vh;
 }
 
-.card h2 {
+.card {
+    width: 900px;
+}
+
+.card1 {
+    width: 500px;
+    margin-left: 20px;
+}
+
+h2 {
     color: #333;
     font-size: 24px;
     margin-bottom: 10px;
@@ -133,16 +147,19 @@ aside .flag img {
 .links {
     list-style-type: none;
     padding: 0;
+    margin-top: 70px;
+    margin-left: 25px;
 }
 
 .links li {
     margin-bottom: 10px;
+    font-size: 35px;
 }
 
 .links a {
     color: #1a73e8;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .links a:hover {
