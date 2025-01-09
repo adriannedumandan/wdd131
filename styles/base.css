@@ -90,6 +90,8 @@ main {
     color: #333;
     font-size: 24px;
     margin-bottom: 10px;
+    border-radius: 6px;
+    max-width: 100%;
 }
 
 .card img {
