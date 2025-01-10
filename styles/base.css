@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #003366;
-    --secondary-color: #F5DEB3;
-    --accent1-color: #FFD470;
-    --accent2-color: #FF7F50;
-    --background-color: #FFFFF0;
+    --primary-color: #2C3E50;
+    --secondary-color: #BDC3C7;
+    --accent1-color: #E74C3C;
+    --accent2-color: #2C3E50;
+    --background-color: #ECF0F1;
     --heading-font: 'Merriweather', serif;
     --text-font: 'Roboto', sans-serif;
 }
@@ -13,7 +13,8 @@ h1, h2, h3 {
 }
 
 body {
-    font-family: var(--text-font);
+    font-family: var(--accent2-color);
+    background-color: var(--background-color);
 }
 
 h1 {
@@ -29,17 +30,15 @@ h1 {
 }
 
 h2 {
+    color: var(--background-color);
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    max-width: 100%;
     background-color: var(--accent2-color);
     display: flex;
     justify-content: center;
     padding: 10px;
-}
-
-h3 {
-    border-bottom: 0.9px solid #c0c0c0;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 8px;
 }
 
 nav {
@@ -66,17 +65,13 @@ figcaption {
     font-style: italic;
     color: #777;
     font-size: 14px;
+    margin-left: 30px;
 }
 
 main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 20px;
-    /* display: grid;
+    display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 20px; */
+    padding: 20px;
 }
 
 .card, .card1 {
@@ -88,7 +83,7 @@ main {
     padding: 20px;
     width: 100%;
     max-width: 800px;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .card {
@@ -96,16 +91,8 @@ main {
 }
 
 .card1 {
-    width: 500px;
+    width: 380px;
     margin-left: 20px;
-}
-
-h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
-    border-radius: 6px;
-    max-width: 100%;
 }
 
 .card img {
@@ -133,15 +120,42 @@ aside h2 {
     margin-bottom: 10px;
 }
 
+aside h3 {
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-bottom: 1px;
+    margin-left: 150px;
+    flex-basis: 100%;
+    border-bottom: 0.9px solid var(--primary-color);
+    display: inline-block; 
+    text-align: center; 
+    padding-bottom: 5px;
+    padding-left: 30px; 
+    padding-right: 30px; 
+    width: auto; 
+}
+
 aside .flag {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-bottom: 10px;
+    margin-left: 0%;
+    margin-right: 5px;
 }
 
 aside .flag img {
     margin-bottom: 5px;
+}
+
+aside p {
+    margin: 0;
+}
+
+.country {
+    display: flex;
+    align-items: center;
+    width: 650px;
+    margin-bottom: 10px;
 }
 
 .links {
@@ -166,20 +180,12 @@ aside .flag img {
     text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
 footer, script {
     margin-top: 10px;
     height: 60px;
     text-align: center;
     background-color: var(--primary-color);
-    color: var(--accent1-color);
+    color: var(--secondary-color);
     position: relative;
     padding-top: 5px;
     padding-bottom: 25px;
