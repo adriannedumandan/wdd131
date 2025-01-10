@@ -1,8 +1,7 @@
 :root {
     --primary-color: #2C3E50;
     --secondary-color: #BDC3C7;
-    --accent1-color: #E74C3C;
-    --accent2-color: #2C3E50;
+    --accent1-color: #2C3E50;
     --background-color: #ECF0F1;
     --heading-font: 'Merriweather', serif;
     --text-font: 'Roboto', sans-serif;
@@ -34,7 +33,7 @@ h2 {
     margin-bottom: 10px;
     border-radius: 6px;
     max-width: 100%;
-    background-color: var(--accent2-color);
+    background-color: var(--accent1-color);
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -49,7 +48,7 @@ nav {
 
 
 nav a {
-	color:  var(--accent2-color);
+	color:  var(--accent1-color);
 	text-align: center;
 	padding: 1rem;
 	text-decoration: none;
@@ -62,7 +61,7 @@ nav a:hover {
 
 figcaption {
     font-style: italic;
-    color: var(--accent2-color);
+    color: var(--accent1-color);
     font-size: 14px;
     margin-left: 38px;
 }
