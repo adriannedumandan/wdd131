@@ -62,7 +62,7 @@ nav a:hover {
 
 figcaption {
     font-style: italic;
-    color: #777;
+    color: var(--accent2-color);
     font-size: 14px;
     margin-left: 38px;
 }
@@ -170,7 +170,7 @@ aside p {
 }
 
 .links a {
-    color: #1a73e8;
+    color: var(--accent1-color);
     text-decoration: none;
     font-size: 18px;
 }
