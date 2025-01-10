@@ -13,7 +13,6 @@ h1, h2, h3 {
 }
 
 body {
-    font-family: var(--accent2-color);
     background-color: var(--background-color);
 }
 
