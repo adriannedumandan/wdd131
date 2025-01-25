@@ -95,5 +95,12 @@
         padding-bottom: 5px;
     }
 
+    footer {
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
 
 }
