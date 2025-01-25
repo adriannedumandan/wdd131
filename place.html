@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Adrianne Dumandan</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Adrianne Dumandan">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Philippines</h1>
+    </header>
+    <main>
+        <div class="space"> </div>
+        <div class="hero">
+            <picture>
+                <source srcset="images/landscape.webp" media="(min-width: 1000px)">
+                <source srcset="images/carabao.webp" media="(max-width: 550px)">
+                <img src="images/carabao.webp" alt="Carabao" width="100%" height="800">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <div class="info">
+                <div class="label">Area:</div>
+                <div class="value">300,000 sq km</div>
+                <div class="label">Population:</div>
+                <div class="value">116,380,226</div>
+                <div class="label">Capital:</div>
+                <div class="value">Manila</div>
+                <div class="label">Languages:</div>
+                <div class="value">Filipino, English</div>
+                <div class="label">Currency:</div>
+                <div class="value">Philippine Peso</div>
+                <div class="label">Time Zone:</div>
+                <div class="value">UTC+8</div>
+                <div class="label">Calling Code:</div>
+                <div class="value">+639</div>
+                <div class="label">Internet TLD:</div>
+                <div class="value">.ph</div>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="icon">
+                <picture>
+                    <source srcset="images/weather.svg" media="(min-width: 1000px)">
+                    <source srcset="images/weather.svg" media="(min-width: 550px)">
+                    <img src="images/weather.svg" alt="Weather Icon" width="110" height="110">
+                </picture>
+            </div>
+            <div class="info">
+                <div class="label">Temperature:</div>
+                <div class="value">25°C</div>
+                <div class="label">Conditions:</div>
+                <div class="value">Partly Cloudy</div>
+                <div class="label">Wind:</div>
+                <div class="value">3 km/h</div>
+                <div class="label">Wind Chill:</div>
+                <div class="value">31.6°C</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
