@@ -23,16 +23,3 @@ products.forEach(product => {
     selectElement.appendChild(option);
 });
 
-// Increment review counter
-if (localStorage.getItem('reviewCount')) {
-    let reviewCount = parseInt(localStorage.getItem('reviewCount'));
-    reviewCount += 1;
-    localStorage.setItem('reviewCount', reviewCount);
-} else {
-    localStorage.setItem('reviewCount', 1);
-}
-
-// // Display review count (optional)
-// const reviewCountDisplay = document.createElement('p');
-// reviewCountDisplay.textContent = `Number of reviews completed: ${localStorage.getItem('reviewCount')}`;
-// document.body.appendChild(reviewCountDisplay);
