@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #2C3E50;
+    --secondary-color: #BDC3C7;
+    --background-color: white;
+    --heading-font: 'Merriweather', serif;
+    --text-font: 'Roboto', sans-serif;
+}
+
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: var(--text-font);
+    color: var(--primary-color);
+}
+
+/* Header */
+.header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.menu-btn {
+    display: block;
+}
+.nav-links {
+    display: none;
+}
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+        gap: 1.5rem;
+    }
+    .menu-btn {
+        display: none;
+    }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem;
+}
+.hero-title {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: var(--heading-font);
+}
+.hero-subtext {
+    color: #555;
+}
+.btn {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+}
+.hero-img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+}
+
+/* Benefits Section */
+.benefits {
+    background-color: var(--background-color);
+    padding: 2rem;
+}
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.benefit-item {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+@media (min-width: 768px) {
+    .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Resources Section */
+.resources {
+    padding: 2rem;
+}
+.resources-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.resource-item {
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.link-btn {
+    color: #3498db;
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .resources-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Job Board Section */
+.job-board {
+    background-color: var(--background-color);
+    padding: 2rem;
+}
+.job-list {
+    list-style: none;
+    padding: 0;
+}
+.job-list li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+.job-list a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}

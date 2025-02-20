@@ -1,0 +1,30 @@
+:root {
+    --primary-color: #2C3E50;
+    --secondary-color: #BDC3C7;
+    --background-color: white;
+    --heading-font: 'Merriweather', serif;
+    --text-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--text-font);
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+.color-sample {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+}
+
+.color-1 { background-color: var(--primary-color); }
+.color-2 { background-color: var(--secondary-color); }
