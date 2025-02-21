@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board - Virtual Assistant Hub</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/large-project.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="site-title">VA Hub</h1>
+        <div class="menu-btn">☰</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="board.html">Job Board</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="job-board">
+            <h2 class="section-title">Find VA Jobs</h2>
+            <ul class="job-list" id="jobBoardList">
+                <li>🔹 <a href="https://www.fiverr.com/" target="_blank">Fiverr</a></li>
+                <li>🔹 <a href="https://ph.indeed.com/" target="_blank">Indeed</a></li>
+                <li>🔹 <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+                <li>🔹 <a href="https://www.onlinejobs.ph/" target="_blank">Online Jobs PH</a></li>
+                <li>🔹 <a href="https://www.upwork.com/" target="_blank">Upwork</a></li>
+            </ul>
+        </section>
+
+        <section class="add-job-board">
+            <h2 class="section-title">Add Job Board</h2>
+            <form id="jobBoardForm">
+                <label for="boardName">Job Board Name:</label>
+                <input type="text" id="boardName" name="boardName" required>
+
+                <label for="boardLink">Job Board URL:</label>
+                <input type="url" id="boardLink" name="boardLink" required>
+
+                <input type="submit" value="Add">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span>
+        </p>
+        <p id="lastModified"></p>
+        <div class="sociallinks">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook" class="fb" loading="lazy">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter" class="twt" loading="lazy">
+            </a>
+            <a href="https://instagram.com" target="_blank" loading="lazy">
+                <img src="images/instagram.png" alt="Instagram" class="insta">
+            </a>
+        </div>
+    </footer>
+
+    <script src="scripts/project.js" defer></script>
+</body>
+</html>
